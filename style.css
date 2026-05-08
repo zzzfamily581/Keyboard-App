@@ -1,0 +1,49 @@
+.textarea {
+    width : 100% ;
+}
+.keyboard {
+    background-color: rgb(75, 75, 75);
+    position: absolute;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    height: 35%;
+    width: 100%;
+    bottom: 0px;
+}
+.row1 {
+    display: grid;
+    grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+    padding: 0.5%;
+    column-gap: 1%;
+}
+.row2 {
+    display: grid;
+    grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+    padding: 0.5%;
+    column-gap: 1%;
+}
+.row3 {
+    display: grid;
+    grid-template-columns: 4% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+    padding: 0.5%;
+    column-gap: 1%;
+}.row4 {
+    display: grid;
+    grid-template-columns: 13% 8% 8% 8% 8% 8% 8% 8% 12%;
+    padding: 0.5%;
+    column-gap: 1%;
+}
+.row5 {
+    display: grid;
+    grid-template-columns: 13% 8% 8% 35% 8% 12%;
+    padding: 0.5%;
+    column-gap: 1%;
+}
+button {
+    border-radius: 20%;
+    font-weight: bold;
+    border: none;
+}
+.space {
+    border-radius: 10px;
+}
