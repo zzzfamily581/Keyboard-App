@@ -7,23 +7,29 @@
     <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-    <textarea class="textarea" id="textbox" readonly></textarea>
+    <p class="head">SECRET KODE APP</p>
+    <div class="container">
+        <textarea class="textarea" id="textbox" readonly></textarea>
+        <span id="cursor">|</span>
+    </div>
+    <button onclick="copy()" class="copy" id="copy">COPY TO CLIPBOARD</button>
     <div class="keyboard">
         <div class="row1">
-            <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button><button>0</button>
+            <button onclick="alert">1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button><button>0</button>
         </div>
         <div class="row2">
-            <button>q</button><button>w</button><button>e</button><button>r</button><button>t</button><button>y</button><button>u</button><button>i</button><button>o</button><button>p</button>
+            <button onclick="typeletter('(,)')">q</button><button onclick="typeletter('ω')">w</button><button onclick="typeletter('3')">e</button><button onclick="typeletter('|z')">r</button><button onclick="typeletter('⨥')">t</button><button onclick="typeletter('Ψ')">y</button><button onclick="typeletter('⨽|')">u</button><button onclick="typeletter('1')">i</button><button onclick="typeletter('0')">o</button><button onclick="typeletter('ρ')">p</button>
         </div>
         <div class="row3">
-            <div></div><button>a</button><button>s</button><button>d</button><button>f</button><button>g</button><button>h</button><button>j</button><button>k</button><button>l</button>
+            <div></div><button onclick="typeletter('Δ')">a</button><button onclick="typeletter('§')">s</button><button onclick="typeletter('Ð')">d</button><button onclick="typeletter('|=')">f</button><button onclick="typeletter('ɢ')">g</button><button onclick="typeletter('}{')">h</button><button onclick="typeletter('_|')">j</button><button onclick="typeletter('|{')">k</button><button onclick="typeletter('|_')">l</button><div></div>
         </div>
         <div class="row4">
-            <button></button><button>z</button><button>x</button><button>c</button><button>v</button><button>b</button><button>n</button><button>m</button><button>◀▮</button>
+            <button></button><button onclick="typeletter('7_')">z</button><button onclick="typeletter('χ')">x</button><button onclick="typeletter('Ϛ')">c</button><button onclick="typeletter('ν')">v</button><button onclick="typeletter('8')">b</button><button onclick="typeletter('Π')">n</button><button onclick="typeletter('^^')">m</button><button onclick="backspace()">◀▮</button>
         </div>
         <div class="row5">
-            <button>?123</button><button>,</button><button>😁</button><button class="space"></button><button>.</button><button class="enter">↵</button>
+            <button>?123</button><button onclick="typeletter(',')">,</button><button>😁</button><button class="space" onclick="addspace('')"></button><button onclick="typeletter('.')">.</button><button class="enter" onclick="enter()">↵</button>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>

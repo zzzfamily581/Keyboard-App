@@ -1,49 +1,101 @@
 .textarea {
-    width : 100% ;
+    width : 93% ;
+    height: 120px;
+    caret-color: #4285f4;
+    font-size: 13.33px;
+    padding: 10px;
+    font-family: monospace;
+    border-radius: 20px;
+    border: none;
+    background-color: #111111;
+    box-shadow: 0px 4px 8px 3px #000;
+    color: #fff;
 }
 .keyboard {
-    background-color: rgb(75, 75, 75);
+    background-color: #222222;
     position: absolute;
     display: grid;
     grid-template-rows: 20% 20% 20% 20% 20%;
     height: 35%;
     width: 100%;
     bottom: 0px;
+    left: 0px;
 }
 .row1 {
     display: grid;
-    grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 0.5%;
     column-gap: 1%;
 }
 .row2 {
     display: grid;
-    grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 0.5%;
     column-gap: 1%;
 }
 .row3 {
     display: grid;
-    grid-template-columns: 4% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     padding: 0.5%;
     column-gap: 1%;
 }.row4 {
     display: grid;
-    grid-template-columns: 13% 8% 8% 8% 8% 8% 8% 8% 12%;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
     padding: 0.5%;
     column-gap: 1%;
 }
 .row5 {
     display: grid;
-    grid-template-columns: 13% 8% 8% 35% 8% 12%;
+    grid-template-columns: 1.5fr 1fr 1fr 4fr 1fr 1.5fr;
     padding: 0.5%;
     column-gap: 1%;
 }
 button {
-    border-radius: 20%;
+    border-radius: 10px;
     font-weight: bold;
-    border: none;
+    border: none ;
+    font-family: sans-serif;
+    border-bottom: 2px solid #303030;
+    background-color: #0c0c0c;
+    color: #bdbdbd;
 }
 .space {
     border-radius: 10px;
+}
+.container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+#cursor {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-size: 20px;
+    color: #4285f4;
+    animation: blink 1s step-end infinite;
+    pointer-events: none;
+}
+@keyframes blink {
+    0%, 100%{ opacity: 1; }
+    50% { opacity: 0; }
+}
+.copy {
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(0, 155, 64);
+    color: white;
+    margin-top: 20px;
+    border-bottom: none;
+}
+.head {
+    display: grid;
+    justify-items: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+}
+body {
+    background-color: #111111;
 }
