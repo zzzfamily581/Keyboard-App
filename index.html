@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-    <p class="head">SECRET KODE APP</p>
+    <div class="containerT">
+        
+        <div class="active tab">Enconde</div>
+        <div class="activeN decode tab"><a class="tabLText" href="index2.html">Decode</a></div>
+    </div>
+    <div style="width: 100%; height: 10px;"></div>
     <div class="container">
-        <textarea class="textarea" id="textbox" readonly></textarea>
+        <textarea class="textarea" id="textbox" placeholder="Enter text here" readonly></textarea>
         <span id="cursor">|</span>
     </div>
     <button onclick="copy()" class="copy" id="copy">COPY TO CLIPBOARD</button>
     <div class="keyboard">
+        <div></div>
         <div class="row1">
-            <button onclick="alert">1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button><button>0</button>
+            <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button><button>0</button>
         </div>
         <div class="row2">
             <button onclick="typeletter('(,)')">q</button><button onclick="typeletter('ω')">w</button><button onclick="typeletter('3')">e</button><button onclick="typeletter('|z')">r</button><button onclick="typeletter('⨥')">t</button><button onclick="typeletter('Ψ')">y</button><button onclick="typeletter('⨽|')">u</button><button onclick="typeletter('1')">i</button><button onclick="typeletter('0')">o</button><button onclick="typeletter('ρ')">p</button>
@@ -27,8 +33,8 @@
             <button></button><button onclick="typeletter('7_')">z</button><button onclick="typeletter('χ')">x</button><button onclick="typeletter('Ϛ')">c</button><button onclick="typeletter('ν')">v</button><button onclick="typeletter('8')">b</button><button onclick="typeletter('Π')">n</button><button onclick="typeletter('^^')">m</button><button onclick="backspace()">◀▮</button>
         </div>
         <div class="row5">
-            <button>?123</button><button onclick="typeletter(',')">,</button><button>😁</button><button class="space" onclick="addspace('')"></button><button onclick="typeletter('.')">.</button><button class="enter" onclick="enter()">↵</button>
-        </div>
+            <button>?123</button><button onclick="typeletter(',')">,</button><button>😁</button><button class="space" onclick="addspace()"></button><button onclick="typeletter('.')">.</button><button class="enter" onclick="enter()">↵</button>
+            </div>
     </div>
 </body>
 <script src="script.js"></script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard App</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="containerT">
+        <div class="activeN tab"><a class="tabLText" href="index.html">Enconde</a></div>
+        <div class="active decode tab">Decode</div>
+    </div>
+    <div style="width: 100%; height: 10px;"></div>
+    <div class="container">
+        <textarea class="textarea" id="pTextbox" placeholder="Paste text here" readonly></textarea>        
+        <button class="paste" onclick="paste()">PASTE</button>
+    </div>
+    <div class="arrow">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <textarea class="textarea" id="aTextbox" readonly></textarea>
+    <button class="copy">DECODE</button>
+</body>
+<script src="script.js"></script>
+<script src="decode.js"></script>
+</html>
